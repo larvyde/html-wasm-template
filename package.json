@@ -1,0 +1,10 @@
+{
+    "name": "placeholder_name_replace_me",
+    "version": "0.1.0",
+    "scripts": {
+        "compile": "wasm-pack build --target no-modules",
+        "jsify": "cargo run --features=bin-jsify jsify",
+        "build": "npm run compile && npm run jsify",
+        "clean": "cargo clean && rm -r pkg"
+    }
+}

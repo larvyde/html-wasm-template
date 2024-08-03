@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>placeholder_name_replace_me</title>
+        <script src="./pkg/placeholder_name_replace_me.js"></script>
+        <script src="./pkg/placeholder_name_replace_me_bg.wasm.b64.js"></script>
+    </head>
+    <body>
+        <script lang="js">
+            (async function() {
+                await wasm_bindgen(wasm_bindgen.module);
+                delete wasm_bindgen.module;
+            })();
+        </script>
+    </body>
+</html>
